@@ -2,7 +2,7 @@
   "name": "merj-mirror-pi",
   "version": "1.0.0",
   "description": "Connection from the database to the mirror",
-  "main": "main.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,16 +10,18 @@
     "type": "git",
     "url": "git+https://github.com/Flarwalker/MERJMirrorPi.git"
   },
-  "author": "Eric Weiss and Ryan \u001b[A\u001b[BCross",
+  "author": "Eric Weiss, Ryan Cross, Megan Davison",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Flarwalker/MERJMirrorPi/issues"
   },
   "homepage": "https://github.com/Flarwalker/MERJMirrorPi#readme",
   "dependencies": {
+    "express": "^4.16.2",
     "jquery": "^3.2.1",
     "mysql": "^2.15.0",
     "newsapi": "^2.0.1",
+    "path": "^0.12.7",
     "sql": "^0.78.0"
   }
 }
