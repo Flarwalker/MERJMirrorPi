@@ -17,6 +17,11 @@ var conn = mysql.createConnection({
     database: "merjmirror"
 });
 
+conn.connect (function(err) {
+    if (err) throw err
+    console.log("Connected");
+});
+
 // Sets up the JSON to allow GET and POST operations.
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -28,11 +33,6 @@ app.use("/js", express.static(path.resolve(__dirname + "/js")));
 
 // Loads the dataBase, creates the layout.json file, send the index.html page.
 app.get('/', function(req, res) {
-    conn.connect (function(err) {
-        if (err) throw err
-        console.log("Connected");
-    });
-
     var dataTypes;
 
     dbCall1 (function (err, results) {
@@ -48,8 +48,6 @@ app.get('/', function(req, res) {
                 }
             });
         }
-
-        conn.end();
     });
 
     res.send(fs.readFileSync(path.resolve(__dirname + "/index.html"), {encoding: "utf8"}));

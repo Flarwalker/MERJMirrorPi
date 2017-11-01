@@ -14,6 +14,9 @@ $(document).ready(function() {
 
         var spot2 = document.getElementById('spot2');
         spot2.innerHTML = '<div id = "' + dataSets[1].data + '" class = "widget"></div>';
+        $.getScript(dataSets[1].script, function(data) {
+            console.log("Widget loaded for " + dataSets[1].script);
+        });
 
         var spot3 = document.getElementById('spot3');
         spot3.innerHTML = '<div id = "' + dataSets[2].data + '" class = "widget"></div>';
