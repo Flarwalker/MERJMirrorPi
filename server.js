@@ -6,6 +6,9 @@ var fs = require('fs');
 var bodyParser = require('body-parser');
 var path = require('path');
 
+// Config File variable
+var layout = require('./layout.json');
+
 // Database Connection
 var conn = mysql.createConnection({
     host: "localhost",
@@ -21,6 +24,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Sets up the Access the css and widgets folders.
 app.use("/css", express.static(path.resolve(__dirname + "/css")));
 app.use("/widgets", express.static(path.resolve(__dirname + "/widgets")));
+app.use("/js", express.static(path.resolve(__dirname + "/js")));
 
 // Loads the dataBase, creates the layout.json file, send the index.html page.
 app.get('/', function(req, res) {
@@ -48,9 +52,13 @@ app.get('/', function(req, res) {
         conn.end();
     });
 
-
-
     res.send(fs.readFileSync(path.resolve(__dirname + "/index.html"), {encoding: "utf8"}));
+});
+
+// GET request for the Layout JSON file.
+app.get('/layout', function(req, res) {
+    layout = JSON.parse(fs.readFileSync('layout.json', 'utf8'));
+    res.send(JSON.parse(fs.readFileSync('layout.json', 'utf8')));
 });
 
 // Sets node js to listen to port 8080.
@@ -59,6 +67,7 @@ app.listen(8080, function() {
 	console.log('Visit http://localhost:8080 to view.');
 });
 
+// Call database and Select the active preference.
 function dbCall(callback) {
     conn.query("SELECT dataDisplay FROM preference WHERE active = '1'", function (err, result) {
         if (err) {
@@ -69,6 +78,7 @@ function dbCall(callback) {
     });
 }
 
+// Call the database and gets the list of data types.
 function dbCall1(callback) {
     conn.query("SELECT * FROM datadisplay ORDER BY dataDisplayID", function (err, result) {
        if (err) {
@@ -79,6 +89,7 @@ function dbCall1(callback) {
     });
 }
 
+// Takes the database object and creates an array.
 function setData (result) {
     var dataTypes = new Array();
     var i;
@@ -88,6 +99,7 @@ function setData (result) {
     return dataTypes;
 }
 
+// Takes the database objexct and creates a JSON file.
 function genJson (data, dataTypes) {
     var dataSets = data.split(":");
     var i;
@@ -115,7 +127,7 @@ function genJson (data, dataTypes) {
     newLayout.spots.spot7 = {data: spots[6], script: "widgets/" + spots[6] + ".js"};
     newLayout.spots.spot8 = {data: spots[7], script: "widgets/" + spots[7] + ".js"};
     newLayout.spots.spot9 = {data: spots[8], script: "widgets/" + spots[8] + ".js"};
-    console.log(newLayout);
+
     fs.writeFile("layout.json", JSON.stringify(newLayout), function(err) {
         if (err) {
             console.log("Error with JSON right! " + err);
