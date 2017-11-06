@@ -1,7 +1,7 @@
 {
   "name": "merj-mirror-pi",
   "version": "1.0.0",
-  "description": "Connection from the database to the mirror",
+  "description": "Connection from the database to the mirror as well as the displaying data from the database",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

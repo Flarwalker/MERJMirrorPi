@@ -13,7 +13,7 @@ var layout = require('./layout.json');
 var conn = mysql.createConnection({
     host: "localhost",
     user: "root",
-    password: "13030.Rfc",
+    password: "root",
     database: "merjmirror"
 });
 

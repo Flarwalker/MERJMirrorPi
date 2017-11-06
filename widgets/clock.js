@@ -12,6 +12,7 @@ function startTime () {
     var today = new Date();
     var hr = today.getHours();
     var min = today.getMinutes();
+    var sec = today.getSeconds();
     var ap = (hr < 12) ? "AM" : "PM";
 
     var curWeekDay = days[today.getDay()];
@@ -30,7 +31,7 @@ function startTime () {
         min = "0" + min;
     }
 
-    var time = hr + ":" + min + " " + ap;
+    var time = hr + ":" + min + ":<span id='sec'>" + sec + "</span><span id='ampm'>" + ap + "</span>";
     var date = curWeekDay + " " + curMonth + " " + curDay + ", " + curYear;
 
     document.getElementById("time").innerHTML = time;

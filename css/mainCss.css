@@ -11,11 +11,19 @@ body {
 	position: relative;
 }
 
+div#spot1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    text-align: left;
+}
+
 div#spot2 {
-	position: absolute;
+/*	position: absolute;*/
 	top: 0;
-	left: 0;
-	right: 0;
+	left: 50%;
+	right: 50%;
 	margin: 0 auto;
 	text-align: center;
 }
@@ -38,8 +46,8 @@ div#spot4 {
 div#spot5 {
 	position: absolute;
 	top: 50%;
-	right: 0%;
-	left: 0%;
+	right: 50%;
+	left: 50%;
 	margin: auto 0;
 	text-align: center;
 }
@@ -63,8 +71,8 @@ div#spot7 {
 div#spot8 {
 	position: absolute;
 	bottom: 0;
-	left: 0;
-	right: 0;
+	left: 50%;
+	right: 50%;
 	margin: 0 auto;
 	text-align: center;
 }

@@ -1,4 +1,11 @@
-weatherLookUp("OH", "Toledo");
+weatherDivs();
+
+function weatherDivs () {
+    $('#Weather').html('<div id ="weather"></div><canvas id="icon1"> </canvas><div id="temp"></div>');
+
+    weatherLookUp("OH", "Toledo");
+    setInterval('weatherLookUp()', 600000);
+}
 
 function weatherLookUp(state, city) {
     $.ajax({
@@ -33,7 +40,7 @@ function weatherLookUp(state, city) {
 
             iconSet(weather);
 
-            $("#weather").html("In the city of " + city + " the weather is " + weather + ".");
+            $("#weather").html("Current weather in " + city + " is " + weather + ".");
             $("#temp").html("The temperature is " + temp_f + "&deg; Fahrenheit.");
         },
         error: function () {
