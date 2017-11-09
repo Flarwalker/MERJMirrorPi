@@ -1,1 +1,40 @@
-{"spots":{"spot1":{"data":"Clock","script":"widgets/Clock.js"},"spot2":{"data":"Weather","script":"widgets/Weather.js"},"spot3":{"data":"News","script":"widgets/News.js"},"spot4":{"data":"","script":"widgets/.js"},"spot6":{"data":"","script":"widgets/.js"},"spot7":{"data":"Horoscope","script":"widgets/Horoscope.js"},"spot8":{"data":"","script":"widgets/.js"},"spot9":{"data":"Stocks","script":"widgets/Stocks.js"}}}
+{
+    "spots":{
+        "spot1":{
+            "data":"Clock",
+            "script":"widgets/Clock.js"
+        },
+        "spot2":{
+            "data":"Weather",
+            "script":"widgets/Weather.js"
+        },
+        "spot3":{
+            "data":"Horoscope",
+            "script":"widgets/Horoscope.js"
+        },
+        "spot4":{
+            "data":"none",
+            "script":"widgets/.js"
+        },
+        "spot5":{
+            "data":"",
+            "script":""
+        },
+        "spot6":{
+            "data":"none",
+            "script":"widgets/.js"
+        },
+        "spot7":{
+            "data":"Horoscope",
+            "script":"widgets/horoscope.js"
+        },
+        "spot8":{
+            "data":"none",
+            "script":"widgets/.js"
+        },
+        "spot9":{
+            "data":"Stocks",
+            "script":"widgets/Stocks.js"
+        }
+    }
+}

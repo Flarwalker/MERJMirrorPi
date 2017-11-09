@@ -2,10 +2,8 @@ $(document).ready(function() {
     $.get('/layout', function(ret) {
         var dataSets = [];
         ret = ret.spots;
-        for (var temp in ret) {
-            if(!(ret[temp].data.trim() === "")) {
-                dataSets.push(ret[temp]);
-            }
+       for (var temp in ret) {
+            dataSets.push(ret[temp]);
         }
 
         if (dataSets[0].data != "") {
@@ -23,7 +21,7 @@ $(document).ready(function() {
                 console.log("Widget loaded for " + dataSets[1].script);
             });
         }
-/*
+
         if (dataSets[2].data != "") {
             var spot3 = document.getElementById('spot3');
             spot3.innerHTML = '<div id = "' + dataSets[2].data + '" class = "widget"></div>';
@@ -31,7 +29,7 @@ $(document).ready(function() {
                 console.log("Widget loaded for " + dataSets[2].script);
             });
         }
-
+/*
         if (dataSets[3].data != "") {
             var spot4 = document.getElementById('spot4');
             spot4.innerHTML = '<div id = "' + dataSets[3].data + '" class = "widget"></div>';
@@ -43,35 +41,37 @@ $(document).ready(function() {
         var spot5 = document.getElementById('spot5');
         spot5.innerHTML = '';
 
-        if (dataSets[4].data != "") {
-            var spot6 = document.getElementById('spot6');
-            spot1.innerHTML = '<div id = "' + dataSets[4].data + '" class = "widget"></div>';
-            $.getScript(dataSets[4].script, function(data) {
-                console.log("Widget loaded for " + dataSets[4].script);
-            });
-        }
-
         if (dataSets[5].data != "") {
-            var spot7 = document.getElementById('spot7');
-            spot7.innerHTML = '<div id = "' + dataSets[5].data + '" class = "widget"></div>';
+            var spot6 = document.getElementById('spot6');
+            spot1.innerHTML = '<div id = "' + dataSets[5].data + '" class = "widget"></div>';
             $.getScript(dataSets[5].script, function(data) {
                 console.log("Widget loaded for " + dataSets[5].script);
             });
-        }
+        }*/
 
-        if (dataSets[6].data != "") {
-            var spot8 = document.getElementById('spot8');
-            spot8.innerHTML = '<div id = "' + dataSets[6].data + '" class = "widget"></div>';
+        if (dataSets[6].data != "none") {
+            var spot7 = document.getElementById('spot7');
+            spot7.innerHTML = '<div id = "' + dataSets[6].data + '" class = "widget"></div>';
             $.getScript(dataSets[6].script, function(data) {
                 console.log("Widget loaded for " + dataSets[6].script);
             });
+        } else {
+            console.log("Widget spot7 empty");
         }
-
+/*
         if (dataSets[7].data != "") {
-            var spot9 = document.getElementById('spot9');
-            spot9.innerHTML = '<div id = "' + dataSets[7].data + '" class = "widget"></div>';
+            var spot8 = document.getElementById('spot8');
+            spot8.innerHTML = '<div id = "' + dataSets[7].data + '" class = "widget"></div>';
             $.getScript(dataSets[7].script, function(data) {
                 console.log("Widget loaded for " + dataSets[7].script);
+            });
+        }
+
+        if (dataSets[8].data != "") {
+            var spot9 = document.getElementById('spot9');
+            spot9.innerHTML = '<div id = "' + dataSets[8].data + '" class = "widget"></div>';
+            $.getScript(dataSets[8].script, function(data) {
+                console.log("Widget loaded for " + dataSets[8].script);
             });
         }
         */

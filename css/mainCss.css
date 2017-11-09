@@ -29,7 +29,7 @@ div#spot2 {
 }
 
 div#spot3 {
-	position: absolute;
+	/*position: absolute;*/
 	top: 0;
 	right: 0;
 	text-align: right;
