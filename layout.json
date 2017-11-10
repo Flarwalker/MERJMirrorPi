@@ -13,28 +13,31 @@
             "script":"widgets/Horoscope.js"
         },
         "spot4":{
-            "data":"none",
-            "script":"widgets/.js"
+            "data":"News",
+            "script":"widgets/News.js"
         },
         "spot5":{
             "data":"",
             "script":""
         },
         "spot6":{
-            "data":"none",
-            "script":"widgets/.js"
+            "data":"Stocks",
+            "script":"widgets/Stocks.js"
         },
         "spot7":{
-            "data":"Horoscope",
-            "script":"widgets/horoscope.js"
+            "data":"none",
+            "script":"widgets/.js"
         },
         "spot8":{
             "data":"none",
             "script":"widgets/.js"
         },
         "spot9":{
-            "data":"Stocks",
-            "script":"widgets/Stocks.js"
+            "data":"none",
+            "script":"widgets/.js"
         }
-    }
+    },
+    "city": "Toledo",
+    "state": "OH",
+    "sunSign": "Leo"
 }
