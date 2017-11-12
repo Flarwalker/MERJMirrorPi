@@ -29,7 +29,7 @@ $(document).ready(function() {
                 console.log("Widget loaded for " + dataSets[2].script);
             });
         }
-/*
+
         if (dataSets[3].data != "") {
             var spot4 = document.getElementById('spot4');
             spot4.innerHTML = '<div id = "' + dataSets[3].data + '" class = "widget"></div>';
@@ -37,7 +37,7 @@ $(document).ready(function() {
                 console.log("Widget loaded for " + dataSets[3].script);
             });
         }
-*/
+
         var spot5 = document.getElementById('spot5');
         spot5.innerHTML = '';
 /*

@@ -1,47 +1,33 @@
-let NewsAPI= require('newsapi');
+newsDivs();
 
-let newsapi = new NewsAPI('b534fc994e2d41158d033455ba123406');
+function newsDivs() {
+    $("#News").html('<div id="title"></div>' +
+                    '<div id="description"></div>' +
+                    '<div id="author"></div>');
+    newsLookUp();
+}
 
-// To query articles:
-newsapi.articles({
-  source: 'associated-press', // required
-  sortBy: 'top' // optional
-}).then(articlesResponse => {
-  console.log(articlesResponse);
-    /*
-    {
-      status: "ok",
-      source: "associated-press",
-      sortBy: "top",
-      articles: [
-        ...
-      ]
-    }
-   */
-});
-
-// To query sources:
-newsapi.sources({
-  category: 'technology', // optional
-  language: 'en', // optional
-  country: 'us' // optional
-}).then(sourcesResponse => {
-  console.log(sourcesResponse);
-  /*
-    {
-      status: "ok",
-      sources: [
-        ...
-      ]
-    }
-  */
-});
-
-// For both methods you can also use traditional Node callback style:
-newsapi.articles({
-  source: 'associated-press',
-  sortBy: 'top'
-}, (err, articlesResponse) => {
-  if (err) console.error(err);
-  else console.log(articlesResponse);
-});
+//This gets the top article from the source
+function newsLookUp() {
+    $.get('/layout', function (ret) {
+        var source = ret.newsSource;
+        var url = "https://newsapi.org/v1/articles?source=" + source + "&apiKey=b534fc994e2d41158d033455ba123406";
+        $.ajax({
+            type: 'GET',
+            url: url,
+            success: function (parsed_json) {
+                var title = parsed_json['articles'][0]['title'];
+                var description = parsed_json['articles'][0]['description'];
+                var author = parsed_json['articles'][0]['author'];
+                $("#title").html(title);
+                $("#description").html(description);
+                if (author != "") {
+                    $("#author").html("Author " + author);
+                }
+            },
+            error: function() {
+                console.log("News failed");
+            }
+        })
+    });
+}

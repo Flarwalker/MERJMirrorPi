@@ -39,5 +39,6 @@
     },
     "city": "Toledo",
     "state": "OH",
-    "sunSign": "Leo"
+    "sunSign": "Leo",
+    "newsSource": "the-new-york-times"
 }
