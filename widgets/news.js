@@ -31,3 +31,19 @@ function newsLookUp() {
         })
     });
 }
+
+/*Possible sources
+* There are more than these, but we can just use these main ones
+*
+* bbc-news
+* business-insider
+* cnn
+* espn
+* ign
+* independent
+* the-huffington-post
+* the-new-york-times
+* time
+* usa-today
+*
+*/
