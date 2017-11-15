@@ -3,11 +3,11 @@ weatherDivs();
 function weatherDivs () {
     $('#Weather').html('<div id ="weather"></div><canvas id="icon1"> </canvas><div id="temp"></div>');
 
-    weatherLookUp("OH", "Toledo");
+    weatherLookUp();
     setInterval('weatherLookUp()', 600000);
 }
 
-function weatherLookUp(state, city) {
+function weatherLookUp() {
     $.get('/layout', function(ret) {
         var city = ret.city;
         var state = ret.state;
