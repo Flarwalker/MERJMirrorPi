@@ -125,6 +125,8 @@ function genJson (data, dataTypes) {
             } else if (type == "Stocks") {
                 var stockList = d[1].split('|');
                 newLayout.stocks = stockList;
+            } else if (type == "Reminder") {
+                newLayout.reminder = d[1];
             }
         } else {
             spots.push("");

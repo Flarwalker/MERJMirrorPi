@@ -1,1 +1,46 @@
-{"spots":{"spot1":{"data":"Clock","script":"widgets/Clock.js"},"spot2":{"data":"Weather","script":"widgets/Weather.js"},"spot3":{"data":"News","script":"widgets/News.js"},"spot4":{"data":"Horoscope","script":"widgets/Horoscope.js"},"spot5":{"data":"","script":""},"spot6":{"data":"Stocks","script":"widgets/Stocks.js"},"spot7":{"data":"Reminder","script":"widgets/Reminder.js"},"spot8":{"data":"Comic","script":"widgets/Comic.js"},"spot9":{"data":"","script":"widgets/.js"}},"city":"Bellbrook","state":"OH","newsSource":"the-new-york-times","sunSign":"Sagittarius","stocks":["TSLA"]}
+{
+    "spots":{
+        "spot1":{
+            "data":"Clock",
+            "script":"widgets/Clock.js"
+        },
+        "spot2":{
+            "data":"Weather",
+            "script":"widgets/Weather.js"
+        },
+        "spot3":{
+            "data":"News",
+            "script":"widgets/News.js"
+        },
+        "spot4":{
+            "data":"Horoscope",
+            "script":"widgets/Horoscope.js"
+        },
+        "spot5":{
+            "data":"",
+            "script":""
+        },
+        "spot6":{
+            "data":"Stocks",
+            "script":"widgets/Stocks.js"
+        },
+        "spot7":{
+            "data":"Reminder",
+            "script":"widgets/Reminder.js"
+        },
+        "spot8":{
+            "data":"Comic",
+            "script":"widgets/Comic.js"
+        },
+        "spot9":{
+            "data":"",
+            "script":"widgets/.js"
+        }
+    },
+    "city":"Bellbrook",
+    "state":"OH",
+    "newsSource":"the-new-york-times",
+    "sunSign":"Sagittarius",
+    "stocks":["TSLA"],
+    "reminder": "Pick up some eggs"
+}

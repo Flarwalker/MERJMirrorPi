@@ -48,17 +48,15 @@ $(document).ready(function() {
                 console.log("Widget loaded for " + dataSets[5].script);
             });
         }
-
+*/
         if (dataSets[6].data != "none") {
             var spot7 = document.getElementById('spot7');
             spot7.innerHTML = '<div id = "' + dataSets[6].data + '" class = "widget"></div>';
             $.getScript(dataSets[6].script, function(data) {
                 console.log("Widget loaded for " + dataSets[6].script);
             });
-        } else {
-            console.log("Widget spot7 empty");
         }
-
+/*
         if (dataSets[7].data != "") {
             var spot8 = document.getElementById('spot8');
             spot8.innerHTML = '<div id = "' + dataSets[7].data + '" class = "widget"></div>';
