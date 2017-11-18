@@ -8,79 +8,61 @@ html, body {
 body {
 	background-color: black;
 	color: #fff;
-	position: relative;
 }
 
-div#spot1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 0 auto;
-    text-align: left;
+.auto-margin {
+    margin: auto;
 }
 
-div#spot2 {
-/*	position: absolute;*/
-	top: 0;
-	left: 50%;
-	right: 50%;
-	margin: 0 auto;
-	text-align: center;
+.widget {
+    height: 50%;;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-div#spot3 {
-	/*position: absolute;*/
-	top: 0;
-	right: 0;
-	text-align: right;
+.grid-container {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-rows: 33.33% 33.33% 33.33%;
+    grid-template-areas:
+        "spot1 spot2 spot3"
+        "spot4 spot5 spot6"
+        "spot7 spot8 spot9";
 }
 
-div#spot4 {
-	position: absolute;
-	top: 50%;
-	left: 0;
-	margin: auto 0;
-	text-align: left;
+#spot1 {
+    grid-area: spot1;
 }
 
-div#spot5 {
-	position: absolute;
-	top: 50%;
-	right: 50%;
-	left: 50%;
-	margin: auto 0;
-	text-align: center;
+#spot2 {
+    grid-area: spot2;
 }
 
-div#spot6 {
-	position: absolute;
-	top: 50%;
-	right: 0;
-	margin: auto 0;
-	text-align: right;
+#spot3 {
+    grid-area: spot3;
 }
 
-div#spot7 {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	margin: auto 0;
-	text-align: left:
+#spot4 {
+    grid-area: spot4;
 }
 
-div#spot8 {
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	right: 50%;
-	margin: 0 auto;
-	text-align: center;
+#spot5 {
+    grid-area: spot5;
 }
 
-div#spot9 {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	margin: 0 auto;
-	text-align: right;
+#spot6 {
+    grid-area: spot6;
+}
+
+#spot7 {
+    grid-area: spot7;
+}
+
+#spot8 {
+    grid-area: spot8;
+}
+
+#spot9 {
+    grid-area: spot9;
 }

@@ -1,10 +1,10 @@
 horoDivs();
 
 function horoDivs () {
-    $('#Horoscope').html('<div id="sign"></div>' +
-                         '<div id="range"></div>' +
-                         '<div id="mood"></div>' +
-                         '<div id="desc"></div>');
+    $('#Horoscope').html('<div id="sign" class="auto-margin"></div>' +
+                         '<div id="range" class="auto-margin"></div>' +
+                         '<div id="mood" class="auto-margin"></div>' +
+                         '<div id="desc" class="auto-margin"></div>');
     horoscopeLookUp(); // FIX the Sign thingy
 }
 

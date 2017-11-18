@@ -1,9 +1,9 @@
 newsDivs();
 
 function newsDivs() {
-    $("#News").html('<div id="title"></div>' +
-                    '<div id="description"></div>' +
-                    '<div id="author"></div>');
+    $("#News").html('<div id="title" class="auto-margin"></div>' +
+                    '<div id="description" class="auto-margin"></div>' +
+                    '<div id="author" class="auto-margin"></div>');
     newsLookUp();
 }
 
@@ -22,7 +22,7 @@ function newsLookUp() {
                 $("#title").html(title);
                 $("#description").html(description);
                 if (author != "") {
-                    $("#author").html("Author " + author);
+                    $("#author").html("Author: " + author);
                 }
             },
             error: function() {
