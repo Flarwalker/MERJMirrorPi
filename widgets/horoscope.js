@@ -4,6 +4,7 @@ function horoDivs () {
     $('#Horoscope').html('<div id="sign" class="auto-margin"></div>' +
                          '<div id="range" class="auto-margin"></div>' +
                          '<div id="mood" class="auto-margin"></div>' +
+                         'Description: ' +
                          '<div id="desc" class="auto-margin"></div>');
     horoscopeLookUp(); // FIX the Sign thingy
 }

@@ -1,8 +1,8 @@
 newsDivs();
 
 function newsDivs() {
-    $("#News").html('<div id="title" class="auto-margin"></div>' +
-                    '<div id="description" class="auto-margin"></div>' +
+    $("#News").html('<div id="title" class="auto-margin"></div><br />' +
+                    '<div id="description" class="auto-margin"></div><br />' +
                     '<div id="author" class="auto-margin"></div>');
     newsLookUp();
 }
