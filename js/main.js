@@ -40,7 +40,7 @@ $(document).ready(function() {
 
         var spot5 = document.getElementById('spot5');
         spot5.innerHTML = '';
-/*
+
         if (dataSets[5].data != "") {
             var spot6 = document.getElementById('spot6');
             spot1.innerHTML = '<div id = "' + dataSets[5].data + '" class = "widget"></div>';
@@ -48,7 +48,7 @@ $(document).ready(function() {
                 console.log("Widget loaded for " + dataSets[5].script);
             });
         }
-*/
+
         if (dataSets[6].data != "none") {
             var spot7 = document.getElementById('spot7');
             spot7.innerHTML = '<div id = "' + dataSets[6].data + '" class = "widget"></div>';
@@ -56,7 +56,7 @@ $(document).ready(function() {
                 console.log("Widget loaded for " + dataSets[6].script);
             });
         }
-/*
+
         if (dataSets[7].data != "") {
             var spot8 = document.getElementById('spot8');
             spot8.innerHTML = '<div id = "' + dataSets[7].data + '" class = "widget"></div>';
@@ -72,6 +72,6 @@ $(document).ready(function() {
                 console.log("Widget loaded for " + dataSets[8].script);
             });
         }
-        */
+
     });
 });
