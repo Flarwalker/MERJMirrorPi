@@ -11,9 +11,10 @@ var layout = require('./layout.json');
 
 // Database Connection
 var conn = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "root",
+    host: "131.183.158.181",
+    port: '3306',
+    user: "Mirror",
+    password: "mirror",
     database: "merjmirror"
 });
 
