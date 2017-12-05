@@ -31,6 +31,10 @@ function startTime () {
         min = "0" + min;
     }
 
+    if (sec < 10) {
+        sec = "0" + sec;
+    }
+
     var time = hr + ":" + min + ":<span id='sec'>" + sec + "</span><span id='ampm'>" + ap + "</span>";
     var date = curWeekDay + " " + curMonth + " " + curDay + ", " + curYear;
 
