@@ -14,12 +14,22 @@ body {
     margin: auto;
 }
 
-.widget {
 
+.widget {
 
 }
 
+.box {
+    position: relative;
+    height: 94%;
+    width: 94%;
+    left: 3%;
+    top: 3%;
+}
+
 .grid-container {
+    height: 100%;
+    width: 100%;
     display: grid;
     grid-template-columns: 33.33% 33.33% 33.33%;
     grid-template-rows: 33.33% 33.33% 33.33%;
@@ -27,6 +37,23 @@ body {
         "spot1 spot2 spot3"
         "spot4 spot5 spot6"
         "spot7 spot8 spot9";
+}
+
+#Weather {
+    text-align: center;
+    font-family: 'Lemon', cursive;
+}
+
+#Reminder {
+    font-family: 'Courgette', cursive;
+}
+
+#Horoscope {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+#News {
+    font-family: "Viga", sans-serif;
 }
 
 #spot1 {
