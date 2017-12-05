@@ -44,7 +44,7 @@ function weatherLookUp() {
 
                 iconSet(weather);
 
-                $("#weather").html("Current weather in " + city + " is " + weather + ".");
+                $("#weather").html("The current weather in " + city + " is " + weather + ".");
                 $("#temp").html("The temperature is " + temp_f + "&deg; Fahrenheit.");
             },
             error: function () {
