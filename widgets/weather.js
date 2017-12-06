@@ -49,6 +49,7 @@ function weatherLookUp() {
             },
             error: function () {
                 console.log("API Offline")
+                $('#Weather').html("City and State not valid.");
             }
         });
     });

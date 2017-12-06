@@ -46,6 +46,7 @@ body {
 
 #Reminder {
     font-family: 'Courgette', cursive;
+    font-size: 150%;
 }
 
 #Horoscope {
@@ -54,6 +55,37 @@ body {
 
 #News {
     font-family: "Viga", sans-serif;
+}
+
+#Clcok {
+    padding:25px;
+    max-width:350px;
+    width:100%;
+    text-align:center;
+    border-radius:5px;
+    margin:0 auto;
+    margin-top:15%;
+}
+
+#Time {
+    font-family: sans-serif;
+    font-size:60px;
+    text-shadow:0px 0px 1px #fff;
+    text-align: center;
+}
+
+#Time span {
+    text-shadow:0px 0px 1px #333;
+    font-size:30px;
+    position:relative;
+    text-align: center;
+}
+
+#Date {
+    letter-spacing:4px;
+    font-size:14px;
+    font-family:arial,sans-serif;
+    text-align: center;
 }
 
 #spot1 {

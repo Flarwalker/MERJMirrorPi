@@ -1,7 +1,7 @@
 clockDivs ();
 
 function clockDivs () {
-    $('#Clock').html('<div id ="time"></div><br /><div id="date"></div>');
+    $('#Clock').html('<div id ="Time"></div><br /><div id="Date"></div>');
     startTime();
 }
 
@@ -35,11 +35,11 @@ function startTime () {
         sec = "0" + sec;
     }
 
-    var time = hr + ":" + min + ":<span id='sec'>" + sec + "</span><span id='ampm'>" + ap + "</span>";
+    var time = hr + ":" + min + "<span id='Sec'>:" + sec + "</span><span id='AMPM'>" + ap + "</span>";
     var date = curWeekDay + " " + curMonth + " " + curDay + ", " + curYear;
 
-    document.getElementById("time").innerHTML = time;
-    document.getElementById("date").innerHTML = date;
+    document.getElementById("Time").innerHTML = time;
+    document.getElementById("Date").innerHTML = date;
 
     var time = setTimeout(function() { startTime() }, 500);
 }
