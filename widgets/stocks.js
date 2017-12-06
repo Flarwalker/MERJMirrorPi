@@ -40,9 +40,9 @@ function stockSet(stockname) {
             var close = parsed_json['Time Series (Daily)'][currentdate]['4. close'];
 
             $("#stock_title").html("Stock: " + stockname);
-            $("#open").html("Open: " + open);
-            $("#high").html("High: " + high);
-            $("#low").html("Low: " + low);
+            $("#open").html("Open:  " + open);
+            $("#high").html("High:  " + high);
+            $("#low").html("Low:   " + low);
             $("#close").html("Close: " + close);
         },
         error: function () {
