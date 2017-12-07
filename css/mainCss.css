@@ -14,11 +14,6 @@ body {
     margin: auto;
 }
 
-
-.widget {
-
-}
-
 .box {
     position: relative;
     height: 94%;
@@ -51,13 +46,46 @@ body {
 
 #Horoscope {
     font-family: 'Montserrat Alternates', sans-serif;
+    line-height: 1.5em;
+}
+
+#Horoscope #sign{
+    text-align: center;
+    font-size: 1.4em;
+    padding-bottom: 20px;
+}
+
+#Horoscope #desc{
+    text-indent: 20px;
+    padding-top: 12px;
 }
 
 #News {
     font-family: "Viga", sans-serif;
+    line-height: 1.5em;
 }
 
-#Clcok {
+#News #title {
+    text-align: center;
+    font-size: 1.4em;
+}
+
+#News #description {
+    text-indent: 20px;
+}
+
+#Stocks {
+    font-family: 'Archivo Narrow', sans-serif;
+    line-height: 1.5em;
+}
+
+#Stocks #stock_title {
+    text-align: center;
+    font-size: 1.4em;
+    padding-bottom: 20px;
+}
+
+#Clock {
     padding:25px;
     max-width:350px;
     width:100%;

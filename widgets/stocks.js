@@ -39,7 +39,7 @@ function stockSet(stockname) {
             var low = parsed_json['Time Series (Daily)'][currentdate]['3. low'];
             var close = parsed_json['Time Series (Daily)'][currentdate]['4. close'];
 
-            $("#stock_title").html("Stock: " + stockname);
+            $("#stock_title").html(stockname);
             $("#open").html("Open:  " + open);
             $("#high").html("High:  " + high);
             $("#low").html("Low:   " + low);
