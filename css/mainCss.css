@@ -55,6 +55,14 @@ body {
     padding-bottom: 20px;
 }
 
+#Horoscope #range{
+    text-indent: 20px;
+}
+
+#Horoscope #mood{
+    text-indent: 20px;
+}
+
 #Horoscope #desc{
     text-indent: 20px;
     padding-top: 12px;
@@ -83,16 +91,6 @@ body {
     text-align: center;
     font-size: 1.4em;
     padding-bottom: 20px;
-}
-
-#Clock {
-    padding:25px;
-    max-width:350px;
-    width:100%;
-    text-align:center;
-    border-radius:5px;
-    margin:0 auto;
-    margin-top:15%;
 }
 
 #Time {
